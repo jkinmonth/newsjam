@@ -36,5 +36,8 @@
 
     </header>
     {{ content | safe }}
+       <script type="text/javascript">
+        document.querySelector("#errorTrigger").addEventListener("click", () => { throw new Error("This is an error") });
+    </script>
 </body>
 </html>
